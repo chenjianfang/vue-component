@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>股投邦</title>
+	<link rel="stylesheet" type="text/css" href="dist/js/style.css">
+</head>
+<body>
+	<div class="gu-content">
+		<div :class="'show-big-img'" v-on:mouseenter="imgMoveEnter()" v-on:mouseleave="imgMoveOut()">
+			<img class="img-title" src="./dist/images/big.jpg">
+			<article-box
+				v-bind:class="{'msgmove-enter':moveChange}"
+			></article-box>
+		</div>
+	</div>
+	
+	<script src="dist/js/main.js"></script>
+</body>
+</html>
